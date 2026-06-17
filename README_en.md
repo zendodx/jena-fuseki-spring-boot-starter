@@ -7,20 +7,22 @@
 [![GitHub Stars](https://img.shields.io/github/stars/zendodx/jena-fuseki-spring-boot-starter?style=social)](https://github.com/zendodx/jena-fuseki-spring-boot-starter/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/zendodx/jena-fuseki-spring-boot-starter?style=social)](https://github.com/zendodx/jena-fuseki-spring-boot-starter/forks)
 
-##### 📖 中文文档 | 📖 [English Documentation](README_en.md)
+##### 📖English Documentation | 📖 [中文文档](README.md)
 
-## 概述
+## Overview
 
-让 Spring Boot 项目能像使用 `JdbcTemplate` 操作数据库一样，方便地操作 Apache Jena Fuseki 三元组数据库（知识图谱 / RDF 图库）。
+Enable Spring Boot projects to operate Apache Jena Fuseki triple stores (knowledge graphs / RDF graph databases) as
+easily as using JdbcTemplate to access a relational database.
+Users only need to configure the Fuseki server address in application.yml and @Autowired-inject JenaFusekiTemplate to
+get started — no need to worry about connection management, serialization, authentication, or any other low-level
+details.
 
-业务方只需在 `application.yml` 配置 Fuseki 地址，`@Autowired` 注入 `JenaFusekiTemplate` 即可使用，无需关心底层连接管理、序列化、认证等细节。
-
-## 环境依赖
+## Tool Preparation
 
 - JDK11+
 - Maven3.6+
 
-## Maven引入
+## Add Dependencies
 
 ```xml
 <!-- https://mvnrepository.com/artifact/io.github.zendodx/jena-fuseki-spring-boot-starter -->
@@ -31,12 +33,13 @@
 </dependency>
 ```
 
-## 相关文档
+## User Documentation
 
-- [API文档](docs/dev-guide/API文档.md)
-- [版本变更](docs/changelog.md)
-- [开发须知](docs/contribute.md)
+- [API Document](docs/dev-guide/API文档.md)
+- [Changelog](docs/changelog.md)
+- [Contribute](docs/contribute.md)
 
-## 开源协议
+## Open Source License
 
-jena-fuseki-spring-boot-starter 是在 [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) 协议下的开源项目
+jena-fuseki-spring-boot-starter is an open-source project licensed under
+the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
